@@ -7,6 +7,4 @@ function maxProduct($nums) {
     sort($nums);
     return ($nums[count($nums)-1]-1 ) * ($nums[count($nums)-2]-1);
 }
-
-maxProduct([1,5,4,6]);
 ?>
