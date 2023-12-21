@@ -18,6 +18,6 @@ class Solution {
 }
 
 $solution = new Solution;
-$solution->minPartitions(82734);
+$solution->minPartitions('82734');
 
 ?>
