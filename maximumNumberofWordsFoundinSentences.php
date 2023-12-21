@@ -20,7 +20,7 @@ class Solution {
                 $largestCount = $count;
             }
         }
-        print_r($largestCount);
+        return $largestCount;
     }
 }
 
