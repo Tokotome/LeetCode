@@ -37,7 +37,7 @@ class Solution {
             }
         }
 
-        print_r($totalItems);
+        return $totalItems;
     }
 }
 
