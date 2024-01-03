@@ -37,11 +37,10 @@ class Solution {
         	}	
         }
         return $time;
-
     }
 }
 
 $sol = new Solution;
-$sol->garbageCollection(['G','P','M'], [1,3]);
-//$sol->garbageCollection(['MMM','PGM','GP'], [3,10]);
+//$sol->garbageCollection(['G','P','M'], [1,3]);
+$sol->garbageCollection(['MMM','PGM','GP'], [3,10]);
 ?>
