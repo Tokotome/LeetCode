@@ -26,7 +26,7 @@ class Solution {
                 $total++;
             }
         }
-        echo $total+1;
+        return $total+1;
     }
 }
 
