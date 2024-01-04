@@ -11,7 +11,7 @@ class Solution {
      * @return String
      */
     function removeTrailingZeros($num) {
-        
+        //of course rtrim is an option here as well, but another approach is given just for the variety, not the performance
         if(strpos($num, '0') == false) {
             return $num; 
         }
