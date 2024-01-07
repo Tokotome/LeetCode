@@ -15,38 +15,35 @@ class Solution {
      * @return Boolean
      */
     function judgeCircle($moves) {
-        // horizontal
-        $x = 0;
+       // horizontal
+       $x = 0;
 
-        //vertical
-        $y = 0;
-        
-        for($i = 0; $i < strlen($moves); $i++) {
-            if($moves[$i] == 'U') {
-                $y++;
-            }   
-            
-            if($moves[$i] == 'D') {
-                $y--;
-            }   
+       //vertical
+       $y = 0;
+       for($i = 0; $i < strlen($moves); $i++) {
+           if($moves[$i] == 'U') {
+               $y++;
+           }   
+           
+           if($moves[$i] == 'D') {
+               $y--;
+           }   
 
-            if($moves[$i] == 'L') {
-                $x++;
-            }   
+           if($moves[$i] == 'L') {
+               $x++;
+           }   
 
-            if($moves[$i] == 'R') {
-                $x--;
-            }   
-        }
-        
-        return $x == 0 && $y == 0 ? true : false;
+           if($moves[$i] == 'R') {
+               $x--;
+           }   
+       }
+       return $x == 0 && $y == 0 ? true : false;
     }
 }
 
 
 
 $sol = new Solution;
-//$sol->judgeCircle('RRLL');
 $sol->judgeCircle('RLUURDDDLU');
 
 ?>
