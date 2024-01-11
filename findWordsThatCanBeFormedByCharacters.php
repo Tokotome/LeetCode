@@ -14,12 +14,12 @@ class Solution {
      */
     function countCharacters($words, $chars) {
         $charCountArray = array_count_values(str_split($chars));
-        $result         = 0;
+        $result = 0;
 
         foreach($words as $word)
         {
             $wordCountArray = array_count_values(str_split($word));           
-            $valid          = true;
+            $valid = true;
             
             foreach ($wordCountArray as $char => $charCount) {
                 if (!isset($charCountArray[$char]) || $charCountArray[$char] < $charCount) {
