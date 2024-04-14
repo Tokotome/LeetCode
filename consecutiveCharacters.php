@@ -13,12 +13,9 @@ class Solution {
     function maxPower($s) {
         $strength = 0;
         $largestStrength=0;
-
         $index = 0;
 
         while($s[$index] != '') {
-            $a = $s[$index];
-            $b = $s[$index+1]; 
             if($s[$index] == $s[$index+1]) {
                 $strength++;
                 if($strength > $largestStrength) {
