@@ -5,42 +5,20 @@
 // Return true if each integer in the inclusive range [left, right] is covered by at least one interval in ranges. Return false otherwise.
 // An integer x is covered by an interval ranges[i] = [starti, endi] if starti <= x <= endi.
 
-class Solution {
+class Solution
+{
 
-    /**
-     * @param Integer[][] $ranges
-     * @param Integer $left
-     * @param Integer $right
-     * @return Boolean
-     */
-    function isCovered($ranges, $left, $right) {
-        
-        $leftRightRange = [];
-
-        for($i=$left; $i<= $right; $i++) {
-            $leftRightRange[$i] = 1; 
-        }
-        
-        foreach($ranges as $range) {
-            for($j=$range[0]; $j <= $range[1]; $j++) {
-                if($leftRightRange[$j]) {
-                    unset($leftRightRange[$j]);
-                }
-
-                if($this->isEmpty($leftRightRange)) {
-                    return true;
+  /**
+   * @param Integer[][] $ranges * @param Integer $left
+   * @param Integer $right * @return Boolean */ public function isCovered($ranges, $left, $right)
+    {
+        for($i=$left; $i<=$right; $i++) {
+            foreach ($ranges as $range) {
+                if (($i >= $range[0]) && ($i <= $range[1])) {
+                    continue;
                 }
             }
-        }
-        
-        return false;
-    }
-
-    private function isEmpty($array) {
-        foreach ($array as $element) {
-            if ($element !== null) {
-                return false;
-            }
+            return false;
         }
         return true;
     }
