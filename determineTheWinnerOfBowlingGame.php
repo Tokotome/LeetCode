@@ -28,6 +28,7 @@ class Solution {
     }
 
     private function calculateResult($points) {
+        
         $result = 0;
         for($i=0; $i< count($points); $i++) {
             if($points[$i-1] == 10 || $points[$i-2] == 10) {
@@ -35,7 +36,6 @@ class Solution {
             } else {
                 $result += $points[$i];
             }
-            $i++;
         }
 
         return $result;
