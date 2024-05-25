@@ -1,1 +1,1 @@
-{"version":1,"defects":{"splitStringBySeparatorTest::testSplitWordsBySeparator":4},"times":{"splitStringBySeparatorTest::testSplitWordsBySeparator":0.004,"splitStringBySeparatorTest::testSplitWordsByDifferentSeparator":0}}
+{"version":1,"defects":{"splitStringBySeparatorTest::testSplitWordsBySeparator":4,"splitStringBySeparatorTest::testSplitEmptyWordsBySeparator":3},"times":{"splitStringBySeparatorTest::testSplitWordsBySeparator":0.005,"splitStringBySeparatorTest::testSplitWordsByDifferentSeparator":0,"splitStringBySeparatorTest::testSplitEmptyWordsBySeparator":0}}

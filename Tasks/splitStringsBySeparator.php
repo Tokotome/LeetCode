@@ -13,6 +13,10 @@ class SolutionSplitStringsBySeparator {
      */
     function splitWordsBySeparator($words, $separator) {
         $result = [];
+
+        if(empty($words)) {
+            return $result;
+        }
         foreach($words as $word) {
             $arr = explode($separator, $word);
             foreach($arr as $v) {
@@ -21,10 +25,11 @@ class SolutionSplitStringsBySeparator {
                 }
             }
         }
+        
         return $result;
     }
 }
 
 $sol = new SolutionSplitStringsBySeparator;
-$sol->splitWordsBySeparator(['$easy$','$problem$'], "$");
+$sol->splitWordsBySeparator(["one.two.three","four.five","six"], ".");
 ?>

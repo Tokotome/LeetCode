@@ -31,6 +31,19 @@ class splitStringBySeparatorTest extends TestCase
         $this->assertEquals($expected, $result);
     }
 
+    public function testSplitEmptyWordsBySeparator()
+    {
+        $solution = new SolutionSplitStringsBySeparator();
+
+        $words = [];
+        $separator = ',';
+        $expected = [];
+        
+        $result = $solution->splitWordsBySeparator($words, $separator);
+
+        $this->assertEquals($expected, $result);
+    }
+
     // You can add more tests to cover other cases
 }
 ?>
