@@ -4,7 +4,7 @@
 // Given an integer array nums, move all the even integers at the beginning of the array followed by all the odd integers.
 // Return any array that satisfies this condition.
 
-class Solution {
+class SolutionSortArrayByParity {
 
     /**
      * @param Integer[] $nums
@@ -36,6 +36,6 @@ class Solution {
     }
 }
 
-$solution = new Solution;
+$solution = new SolutionSortArrayByParity;
 $solution->sortArrayByParity([3,1,2,4]);
 ?>
